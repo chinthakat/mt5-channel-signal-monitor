@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "USDJPY",
+  "time_utc": "2025-09-24T11:45:27+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-09-24T11:45:27+00:00",
+    "symbol": "USDJPY",
+    "action": "sell",
+    "price": 148.45,
+    "sl": 149.25,
+    "tp": 146.0,
+    "note": "Market entry @ 148.45 | SL 149.25 | TP 146.0",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8849,
+    "message_link": "https://t.me/c/345264557/8849",
+    "raw_text": "USDJPY SELL now at 148.45\nSL 149.25\nTP 146.00",
+    "profile_name": "blue_forex"
+  }
+}

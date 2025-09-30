@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "EURUSD",
+  "time_utc": "2025-09-24T12:26:30+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-09-24T12:26:30+00:00",
+    "symbol": "EURUSD",
+    "action": "buy",
+    "price": 1.1753,
+    "sl": 1.171,
+    "tp": 1.1918,
+    "note": "Market entry @ 1.1753 | SL 1.171 | TP 1.1918",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8850,
+    "message_link": "https://t.me/c/345264557/8850",
+    "raw_text": "EURUSD BUY now at 1.1753\nSL 1.1710\nTP 1.1918",
+    "profile_name": "blue_forex"
+  }
+}

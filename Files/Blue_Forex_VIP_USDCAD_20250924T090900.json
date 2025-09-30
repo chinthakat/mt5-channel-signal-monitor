@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "USDCAD",
+  "time_utc": "2025-09-24T09:09:00+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-09-24T09:09:00+00:00",
+    "symbol": "USDCAD",
+    "action": "sell",
+    "price": 1.3864,
+    "sl": 1.393,
+    "tp": 1.37,
+    "note": "Market entry @ 1.3864 | SL 1.393 | TP 1.37",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8848,
+    "message_link": "https://t.me/c/345264557/8848",
+    "raw_text": "USDCAD SELL now at 1.3864\nSL 1.3930\nTP 1.3700",
+    "profile_name": "blue_forex"
+  }
+}

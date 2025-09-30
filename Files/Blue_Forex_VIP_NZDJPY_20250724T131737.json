@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "NZDJPY",
+  "time_utc": "2025-07-24T13:17:37+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-07-24T13:17:37+00:00",
+    "symbol": "NZDJPY",
+    "action": "sell",
+    "price": 88.7,
+    "sl": 89.65,
+    "tp": 86.5,
+    "note": "Market entry @ 88.7 | SL 89.65 | TP 86.5",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8728,
+    "message_link": "https://t.me/c/345264557/8728",
+    "raw_text": "NZDJPY SELL now at 88.70\nSL 89.65\nTP 86.50",
+    "profile_name": "blue_forex"
+  }
+}

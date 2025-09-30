@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "USDCHF",
+  "time_utc": "2025-07-10T14:24:54+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-07-10T14:24:54+00:00",
+    "symbol": "USDCHF",
+    "action": "update_sl",
+    "price": 0.7944,
+    "sl": 0.7944,
+    "tp": 0.815,
+    "note": "Move SL to breakeven | ~40.0 pips | 40 pips running \u2705 Small accounts and scalpers close the trade here. Swing traders close half lot and move sl to breakeven \u2705 Trade secured.",
+    "event_type": "management",
+    "order_type": null,
+    "pips": 40.0,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8687,
+    "message_link": "https://t.me/c/345264557/8687",
+    "raw_text": "**40 pips running ** \u2705 \nSmall accounts and scalpers close the trade here. Swing traders close half lot and move sl to breakeven \u2705\n\nTrade secured.",
+    "profile_name": "blue_forex"
+  }
+}

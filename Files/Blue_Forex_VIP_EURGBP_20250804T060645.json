@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "EURGBP",
+  "time_utc": "2025-08-04T06:06:45+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-08-04T06:06:45+00:00",
+    "symbol": "EURGBP",
+    "action": "sell",
+    "price": 0.8713,
+    "sl": 0.88,
+    "tp": 0.85,
+    "note": "Market entry @ 0.8713 | SL 0.88 | TP 0.85",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8761,
+    "message_link": "https://t.me/c/345264557/8761",
+    "raw_text": "EURGBP SELL now at 0.8713\nSL 0.8800\nTP 0.8500",
+    "profile_name": "blue_forex"
+  }
+}

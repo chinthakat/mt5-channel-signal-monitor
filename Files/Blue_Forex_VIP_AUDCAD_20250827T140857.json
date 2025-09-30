@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "AUDCAD",
+  "time_utc": "2025-08-27T14:08:57+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-08-27T14:08:57+00:00",
+    "symbol": "AUDCAD",
+    "action": "sell",
+    "price": 0.8967,
+    "sl": 0.904,
+    "tp": 0.88,
+    "note": "Market entry @ 0.8967 | SL 0.904 | TP 0.88",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8810,
+    "message_link": "https://t.me/c/345264557/8810",
+    "raw_text": "AUDCAD SELL now at 0.8967\nSL 0.9040\nTP 0.8800",
+    "profile_name": "blue_forex"
+  }
+}

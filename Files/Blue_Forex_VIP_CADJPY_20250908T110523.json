@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "CADJPY",
+  "time_utc": "2025-09-08T11:05:23+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-09-08T11:05:23+00:00",
+    "symbol": "CADJPY",
+    "action": "sell",
+    "price": 107.05,
+    "sl": 107.8,
+    "tp": 105.0,
+    "note": "Market entry @ 107.05 | SL 107.8 | TP 105.0",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8817,
+    "message_link": "https://t.me/c/345264557/8817",
+    "raw_text": "CADJPY SELL now at 107.05\nSL 107.80\nTP 105.00",
+    "profile_name": "blue_forex"
+  }
+}

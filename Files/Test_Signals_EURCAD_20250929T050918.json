@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Test Signals",
+  "symbol": "EURCAD",
+  "time_utc": "2025-09-29T05:09:18+00:00",
+  "signal": {
+    "source": "Test Signals",
+    "time_utc": "2025-09-29T05:09:18+00:00",
+    "symbol": "EURCAD",
+    "action": "sell",
+    "price": 1.6303,
+    "sl": 1.6395,
+    "tp": 1.61,
+    "note": "Market entry @ 1.6303 | SL 1.6395 | TP 1.61",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 2735429388,
+    "message_id": 20,
+    "message_link": "https://t.me/c/2735429388/20",
+    "raw_text": "EURCAD SELL now at 1.6303\nSL 1.6395\nTP 1.6100",
+    "profile_name": "test_signals"
+  }
+}

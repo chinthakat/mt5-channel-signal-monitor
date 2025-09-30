@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "EURCHF",
+  "time_utc": "2025-08-11T11:16:43+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-08-11T11:16:43+00:00",
+    "symbol": "EURCHF",
+    "action": "sell",
+    "price": 0.9427,
+    "sl": 0.951,
+    "tp": 0.925,
+    "note": "Market entry @ 0.9427 | SL 0.951 | TP 0.925",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8779,
+    "message_link": "https://t.me/c/345264557/8779",
+    "raw_text": "EURCHF SELL now at 0.9427\nSL 0.9510\nTP 0.9250",
+    "profile_name": "blue_forex"
+  }
+}

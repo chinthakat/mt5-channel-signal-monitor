@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "AUDJPY",
+  "time_utc": "2025-09-18T07:11:25+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-09-18T07:11:25+00:00",
+    "symbol": "AUDJPY",
+    "action": "sell",
+    "price": 97.57,
+    "sl": 98.5,
+    "tp": 95.0,
+    "note": "Market entry @ 97.57 | SL 98.5 | TP 95.0",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8842,
+    "message_link": "https://t.me/c/345264557/8842",
+    "raw_text": "AUDJPY SELL now at 97.57\nSL 98.50\nTP 95.00",
+    "profile_name": "blue_forex"
+  }
+}

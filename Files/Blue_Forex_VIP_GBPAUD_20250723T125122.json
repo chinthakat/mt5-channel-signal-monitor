@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "GBPAUD",
+  "time_utc": "2025-07-23T12:51:22+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-07-23T12:51:22+00:00",
+    "symbol": "GBPAUD",
+    "action": "buy",
+    "price": 2.054,
+    "sl": 2.045,
+    "tp": 2.07,
+    "note": "Market entry @ 2.054 | SL 2.045 | TP 2.07",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8723,
+    "message_link": "https://t.me/c/345264557/8723",
+    "raw_text": "GBPAUD BUY now at 2.0540\nSL 2.0450\nTP 2.0700",
+    "profile_name": "blue_forex"
+  }
+}

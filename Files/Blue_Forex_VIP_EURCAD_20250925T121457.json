@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "EURCAD",
+  "time_utc": "2025-09-25T12:14:57+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-09-25T12:14:57+00:00",
+    "symbol": "EURCAD",
+    "action": "sell",
+    "price": 1.6303,
+    "sl": 1.6395,
+    "tp": 1.61,
+    "note": "Market entry @ 1.6303 | SL 1.6395 | TP 1.61",
+    "event_type": "entry",
+    "order_type": "market",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8853,
+    "message_link": "https://t.me/c/345264557/8853",
+    "raw_text": "EURCAD SELL now at 1.6303\nSL 1.6395\nTP 1.6100",
+    "profile_name": "blue_forex"
+  }
+}

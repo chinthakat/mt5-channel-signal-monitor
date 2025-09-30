@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "EURNZD",
+  "time_utc": "2025-08-08T07:13:26+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-08-08T07:13:26+00:00",
+    "symbol": "EURNZD",
+    "action": "update_sl",
+    "price": 1.9601,
+    "sl": 1.9601,
+    "tp": 1.94,
+    "note": "Move SL to breakeven | ~58.0 pips | 58 pips running \u2705 Small accounts and scalpers close the trade here. Swing traders close half lot and move sl to breakeven \u2705 Trade secured.",
+    "event_type": "management",
+    "order_type": null,
+    "pips": 58.0,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8775,
+    "message_link": "https://t.me/c/345264557/8775",
+    "raw_text": "**58 pips running ** \u2705 \nSmall accounts and scalpers close the trade here. Swing traders close half lot and move sl to breakeven \u2705\n\nTrade secured.",
+    "profile_name": "blue_forex"
+  }
+}

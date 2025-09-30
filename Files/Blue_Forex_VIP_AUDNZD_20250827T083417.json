@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": "Blue Forex VIP",
+  "symbol": "AUDNZD",
+  "time_utc": "2025-08-27T08:34:17+00:00",
+  "signal": {
+    "source": "Blue Forex VIP \ud83d\udc8e\ud83d\udcb0",
+    "time_utc": "2025-08-27T08:34:17+00:00",
+    "symbol": "AUDNZD",
+    "action": "sell",
+    "price": 1.113,
+    "sl": 1.122,
+    "tp": 1.09,
+    "note": "Limit entry @ 1.113 | SL 1.122 | TP 1.09",
+    "event_type": "entry",
+    "order_type": "limit",
+    "pips": null,
+    "quantity_percent": null,
+    "channel_id": 1345264557,
+    "message_id": 8808,
+    "message_link": "https://t.me/c/345264557/8808",
+    "raw_text": "AUDNZD SELL LIMIT now at 1.1130\nSL 1.1220\nTP 1.0900",
+    "profile_name": "blue_forex"
+  }
+}
