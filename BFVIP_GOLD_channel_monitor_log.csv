@@ -1,6 +1,0 @@
-timestamp,signal_id,event_type,symbol,action,signal_price,signal_sl,signal_tp,signal_time,file_name,status,reason,bid,ask,balance,equity,free_margin,open_positions,details
-2025.09.29 13:13:22,-,INIT,XAUUSD,-,-,-,-,-,-,SUCCESS,-,3808.79000,3809.01000,9990.98,9990.98,9990.98,0,EA initialized on XAUUSD for channel Blue_Forex_VIP
-2025.09.29 13:13:22,-,FILE_READ,XAUUSD,-,-,-,-,-,-,START,-,3808.79000,3809.01000,9990.98,9990.98,9990.98,0,Processing file: Blue_Forex_VIP_XAUUSD_20250926T120543.json (Signal #1)
-2025.09.29 13:13:22,1,entry,XAUUSD,buy,3749.00000,3738.00000,3780.00000,2025.09.26 12:05:43,Blue_Forex_VIP_XAUUSD_20250926T120543.json,SUCCESS,Signal parsed successfully,3808.79000,3809.01000,9990.98,9990.98,9990.98,0,Blue Forex VIP
-2025.09.29 13:13:22,1,entry,XAUUSD,buy,3749.00000,3738.00000,3780.00000,2025.09.26 12:05:43,Blue_Forex_VIP_XAUUSD_20250926T120543.json,EXPIRED,Time difference: 4387 minutes (max: 5),3808.79000,3809.01000,9990.98,9990.98,9990.98,0,Blue Forex VIP
-2025.09.29 13:13:22,-,SCAN,XAUUSD,-,-,-,-,-,-,COMPLETED,-,3808.79000,3809.01000,9990.98,9990.98,9990.98,0,Found 1 files; processed 1 new signals

@@ -1,0 +1,36 @@
+# --- Captured signal data and runtime logs -------------------------------
+# The EAs read signal JSON from, and write CSV logs to, the MetaTrader 5
+# "Common\Files" folder. Nothing produced at runtime belongs in the repo.
+Files/
+*_monitor_log.csv
+channel_monitor_log.csv
+multicurrency_signals.json
+Blue_Forex_VIP_*.json
+Premium_Gold_Signals_*.json
+Test_Signals_*.json
+
+# --- MetaTrader 5 build output -------------------------------------------
+*.ex5
+*.ex4
+*.mqproj
+*.log
+Logs/
+Tester/
+MQL5/Logs/
+
+# --- MetaEditor / MetaTrader local state ---------------------------------
+*.bak
+*.tmp
+*.chr
+*.fxtsettings
+*.ini
+!*.example.ini
+
+# --- Editors and OS --------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
