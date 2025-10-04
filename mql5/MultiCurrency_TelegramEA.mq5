@@ -1,3 +1,27 @@
+//+------------------------------------------------------------------+
+//| MultiCurrency_TelegramEA.mq5                                     |
+//|                                                                  |
+//| Multi-symbol Expert Advisor. Runs on any one chart and polls a   |
+//| single aggregate signal file (SignalFileName, default            |
+//| multicurrency_signals.json) in the MetaTrader 5 shared           |
+//| Common\Files folder every TimerSeconds. The file is written by   |
+//| an external producer that is not part of this project and is     |
+//| shaped as                                                        |
+//|   {"timestamp": "...", "signals": {"EURUSD": {...}, ...}}        |
+//| The top-level timestamp is the de-duplication key: an unchanged  |
+//| timestamp means the file is skipped.                             |
+//|                                                                  |
+//| Each entry under "signals" whose symbol appears in               |
+//| AllowedSymbols is acted on: buy/sell open a market position      |
+//| sized from RiskPercent of balance over the SL distance, close    |
+//| closes it, update_sl/update_tp modify it. Open positions are     |
+//| moved to breakeven and then trailed on every timer tick, and     |
+//| new trading stops for the day once MaxDailyLoss percent of the   |
+//| day's starting balance has been lost.                            |
+//|                                                                  |
+//| Output goes to the terminal's Experts log only; this EA writes   |
+//| no file. See README.md for the input reference and JSON schema.  |
+//+------------------------------------------------------------------+
 #property copyright ""
 #property link      ""
 #property version   "1.01"

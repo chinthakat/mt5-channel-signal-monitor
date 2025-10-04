@@ -1,3 +1,25 @@
+//+------------------------------------------------------------------+
+//| ChannelSignalMonitor.mq5                                         |
+//|                                                                  |
+//| Single-symbol Expert Advisor. Watches the MetaTrader 5 shared    |
+//| Common\Files folder for signal files named                       |
+//| <channelName>_<chart symbol>_*.json, written there by an         |
+//| external producer that is not part of this project.              |
+//|                                                                  |
+//| For each file it has not already seen this session it parses     |
+//| the signal, discards it unless its time_utc is within            |
+//| signalWindowMinutes of the broker's clock, then opens a market   |
+//| order (event_type "entry") or closes this EA's positions on the  |
+//| symbol (event_type "exit" or "close"). Stop loss and take        |
+//| profit are taken from the signal and clamped against the         |
+//| broker's stop level and the minSLPoints/maxSLPoints inputs; lot  |
+//| size comes from riskPercentage of balance over the SL distance.  |
+//|                                                                  |
+//| Every event is appended as a row to                              |
+//| <channelName>_<symbol>_monitor_log.csv in Common\Files.          |
+//|                                                                  |
+//| See README.md for the input reference and the JSON schema.       |
+//+------------------------------------------------------------------+
 #property copyright "Channel Signal Monitor EA"
 #property version   "1.00"
 #property strict
@@ -6,7 +28,7 @@
 #include <Trade\PositionInfo.mqh>
 
 // Input parameters
-input string channelName = "Blue_Forex_VIP"; // Channel name to monitor
+input string channelName = "My_Channel"; // Channel name to monitor
 input int signalWindowMinutes = 5; // Time window for signal validity (minutes)
 input double riskPercentage = 1.0; // Risk percentage per trade
 input double defaultLotSize = 0.01; // Default lot size if risk calculation fails

@@ -5,9 +5,9 @@ Files/
 *_monitor_log.csv
 channel_monitor_log.csv
 multicurrency_signals.json
-Blue_Forex_VIP_*.json
-Premium_Gold_Signals_*.json
-Test_Signals_*.json
+# Per-signal captures are named <channelName>_<symbol>_<timestamp>.json;
+# add a line for whatever channel prefix you configure.
+My_Channel_*.json
 
 # --- MetaTrader 5 build output -------------------------------------------
 *.ex5
