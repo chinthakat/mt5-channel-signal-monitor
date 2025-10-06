@@ -7,24 +7,18 @@ group), not a price channel — the EAs do no chart analysis of their own.
 
 ## Status
 
-Experimental / personal research code. The trade, risk-sizing and logging paths are
-all implemented, but there are no tests, no CI and no release build, and neither EA
-here has been compile-verified while preparing the repository for publication. Read
-these as sources to check and fix, not as something guaranteed to build unmodified.
+Personal research code. The trade, risk-sizing and logging paths are implemented, but there are
+no tests, no CI and no release build, and neither EA has been compile-verified. Treat them as
+sources to check and fix rather than as builds guaranteed to compile unmodified.
 
-`ChannelSignalMonitor` is the one that has demonstrably been run — the repository
-history contains a CSV run log it produced. `MultiCurrency_TelegramEA` has no such
-evidence and almost certainly does **not** compile as it stands; see
-[Known defects](#known-defects).
+`ChannelSignalMonitor` has demonstrably been run. `MultiCurrency_TelegramEA` has not, and almost
+certainly does not compile as it stands - see [Known defects](#known-defects).
 
-The two EAs are separate experiments with different file formats and different
-feature sets — they are not two halves of one product and should not be run against
-the same signal source.
+The two EAs are separate experiments with different file formats and feature sets. They are not
+two halves of one product and should not be run against the same signal source.
 
-**The component that produces the signal JSON is not in this repository.** Both EAs
-are consumers only. Something else — a Telegram reader or any other script — has to
-write the files described below into `Common\Files`. Nothing here scrapes, parses or
-connects to Telegram.
+The component that produces the signal JSON is not in this repository. Both EAs are consumers
+only; something else has to write the files described below into `Common\Files`.
 
 ## How it works
 
@@ -113,29 +107,14 @@ write a CSV.
 
 ## Known defects
 
-Found by reading the code, not by running it. None of them are fixed in this
-repository.
-
-- **`MultiCurrency_TelegramEA` redefines two MQL5 built-ins.** It declares
-  `string StringTrimLeft(const string str)` (line 408) and
-  `string StringTrimRight(const string str)` (line 416), colliding with the built-in
-  `int StringTrimLeft(string&)` / `int StringTrimRight(string&)`. MetaEditor
-  normally refuses this outright as an attempt to override a system function. Even
-  in the best case, where the calls resolved to the built-ins, `ParseAllowedSymbols`
-  does `symbol = StringTrimLeft(symbol);` (line 394) — assigning an `int` return
-  into a `string`, which turns every whitelist entry into a number and leaves the EA
-  matching no symbols at all. Renaming the two helpers and their two call sites
-  (`TrimLeftStr` / `TrimRightStr`) is the obvious fix; it is deliberately not applied
-  here, so that the change is made by the developer against a real compiler.
-- **`CommonFilesDir` cannot do what its name suggests.** `ReadSignalJson` retries
-  with `FileOpen(path, FILE_READ|FILE_TXT|FILE_ANSI|FILE_SHARE_READ)` (line 642) —
-  without `FILE_COMMON`. MQL5 file access is sandboxed, so that path is resolved
-  inside `<data folder>\MQL5\Files` and an absolute directory can never be opened
-  through it. The input is effectively dead.
-- **`EnableNewsFilter` does nothing.** It is declared as an input and never read
-  anywhere in the file.
-- **The daily loss cutout is wider than it sounds.** As described above, tripping
-  `MaxDailyLoss` suspends management of open positions as well as new entries.
+- `MultiCurrency_TelegramEA` redefines the MQL5 built-ins `StringTrimLeft` and `StringTrimRight`
+  (lines 408 and 416). MetaEditor normally rejects this outright, and even where it resolved,
+  `ParseAllowedSymbols` assigns the `int` return into a `string`, leaving the EA matching no
+  symbols. Renaming the two helpers and their call sites is the fix.
+- `CommonFilesDir` is effectively dead. `ReadSignalJson` retries without `FILE_COMMON`, and
+  MQL5's sandbox resolves that path inside `MQL5\Files`, so an absolute directory never opens.
+- `EnableNewsFilter` is declared as an input and never read.
+- Tripping `MaxDailyLoss` suspends management of open positions as well as new entries.
 
 ## Requirements
 
